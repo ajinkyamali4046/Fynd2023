@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <p id="test"></p>
+        <script>
+            function test(first,second,last)
+            {
+                this.first=first;
+                this.second=second;
+            }
+            const obj= new test("1","2","3");
+
+            document.getElementById("test").innerHTML=obj.first;
+        </script>
+    </body>
+</html>

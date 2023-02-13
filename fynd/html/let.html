@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <h2>js</h2>
+        <p id="test"></p>
+        <script>
+            let x=10;
+            var y=10;
+            {
+                let x=2;
+                var y=20;
+                console.log(x);
+            }
+            document.getElementById("test").innerHTML=y;
+            console.log(x);
+        </script>
+    </body>
+</html>
