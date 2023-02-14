@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h2>Callback</h2>
+        <script>
+        function fun(num,call) 
+        {
+            if (num % 2 == 0) 
+            {
+            call(" It is even");
+            } else 
+            {
+            call("It is odd");
+             }
+        }
+        function res(result)
+        {
+            console.log(result);
+        }
+         fun(7,res);
+         fun(4,res);
+        </script>
+    </body>
+</html>
