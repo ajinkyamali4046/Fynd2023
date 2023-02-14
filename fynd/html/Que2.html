@@ -1,0 +1,40 @@
+ <html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            // hoisting
+            p=37;
+            q=90;
+            document.getElementById("demo");
+            var p;
+            var q;
+
+            // var and let
+
+            function test()
+            {
+                let x=15;
+                if(true)
+                {
+                    let x=20;
+                    console.log(x); // Here the value of x is 20
+                }
+                console.log(x);// Here the value of x is 10 but if we use var instead of let the value of both will be same.
+                // let have the particular block scope and var have global scope.
+            }
+
+            // null and undefined
+
+            var x;
+            var y=null;
+            if(x==undefined)
+            {
+                console.log("It is undefined");
+            }
+            else if(y==null)
+            {
+                console.log("It is null");
+            }
+        </script>
+    </body>
+ </html>
