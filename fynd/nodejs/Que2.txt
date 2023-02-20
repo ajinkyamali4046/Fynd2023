@@ -1,0 +1,14 @@
+Nodejs is a JavaScript runtime JavaScript engine. 
+Here is the working of event lop:
+
+
+The architecture is I/O model that makes it for building, high-performance applications.
+At the heart of Nodejs is the event loop, which is responsible for handling all I/O operations in Nodejs. 
+The event loop is a loop that continuously checks for pending events and executes their corresponding callback functions.
+When Nodejs starts, it initializes the event loop and runs any necessary setup code.
+The event loop begins by checking the event queue for any previous events.
+When an event occurs, such as a user input or a request, it is added to the event queue.
+The event loop checks the event queue and selects the next event to process.
+if the the non-blocking I/O operation is complete, its corresponding callback is added to the event queue.
+The event loop then selects the next event from the event queue and executes its corresponding callback functiob.
+This process continues until there are no more events in the event queue.
